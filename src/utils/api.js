@@ -29,7 +29,7 @@ const fetchComments = (ids) => {
 
 const fetchMainPosts = (type) => {
     return fetch(`${ api }/${ type }stories${ json }`)
-        .then((res) => res.json)
+        .then((res) => res.json())
         .then((ids) => {
             if (!ids) {
                 throw new Error(`There was an error fetching the ${ type } posts.`)
