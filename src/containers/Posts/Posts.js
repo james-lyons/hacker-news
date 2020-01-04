@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { fetchMainPosts } from '../../utils/api';
-import Loading from '../Loading';
-import PostsLists from '../../components/PostsList';
+import Loading from '../Loading/Loading';
+import PostsList from '../../components/PostsList/PostsList';
 
 class Posts extends React.Component {
     state = {
@@ -53,6 +53,10 @@ class Posts extends React.Component {
 
         return <PostsList posts={ posts } />
     };
+};
+
+Posts.propTypes = {
+    type: PropTypes.oneOf(['top', 'new'])
 };
 
 export default Posts;

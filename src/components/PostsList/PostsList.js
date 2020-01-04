@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PostMetaInfo from '../PostMetaInfo/PostMetaInfo';
-import Title from '../Title';
+import Title from '../Title/Title';
 
 const PostsList = ({ posts }) => {
     if (posts.length === 0) {

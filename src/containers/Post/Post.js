@@ -1,7 +1,7 @@
 import React from 'react';
 import queryString from 'query-strings';
 import { fetchItem, fetchPosts, fetchComments } from '../../utils/api';
-import Loading from '../Loading';
+import Loading from '../Loading/Loading';
 import PostMetaInfo from '../../components/PostMetaInfo/PostMetaInfo';
 import Title from '../../components/Title/Title';
 import Comment from '../../components/Comment/Comment';

@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Nav from './components/'
+import Nav from './components/Nav/Nav';
 import Routes from './config/Routes';
 import { ThemeProvider } from './contexts/theme';
 import './index.css';
